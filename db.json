@@ -1,0 +1,39 @@
+{
+        "pães": [
+            {"id": 1, "tipo": "Italiano Branco"},
+            {"id": 2, "tipo": "Carioca"},
+            {"id": 3, "tipo": "Massa Fina"},
+            {"id": 4, "tipo": "Integral"}
+        ],
+        "carnes": [
+            {"id": 1, "tipo": "Tofú"},
+            {"id": 2, "tipo": "Mortadela"},
+            {"id": 3, "tipo": "Carne Moida"},
+            {"id": 4, "tipo": "Picanha"}
+        ],
+        "Adicionais": [
+            {"id": 1, "tipo": "Bacon"},
+            {"id": 2, "tipo": "Cheedar"},
+            {"id": 3, "tipo": "Salame"},
+            {"id": 4, "tipo": "Alface"},
+            {"id": 4, "tipo": "Pepino"},
+            {"id": 4, "tipo": "Tomate"}
+        ],
+        "Acompanhamento": [
+            {"id": 1, "tipo": "Batata Frita"},
+            {"id": 2, "tipo": "Anéis de cebola"},
+            {"id": 3, "tipo": "Salada"}
+        ],
+        "Bebida": [
+            {"id": 1, "tipo": "Coca-Cola"},
+            {"id": 2, "tipo": "Pepsi"},
+            {"id": 3, "tipo": "Guarana"}
+        ],
+        "Status": [
+            {"id": 1, "tipo": "Solicitado"},
+            {"id": 2, "tipo": "Em Andamento"},
+            {"id": 3, "tipo": "Concluído"}
+        ],
+        "Burgers": [ 
+]
+    }

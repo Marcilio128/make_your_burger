@@ -1,0 +1,17 @@
+#main-banner {
+    background-image: url('/public/img/Hamburger.jpg');
+    background-position: 0 -250px;
+    background-size: cover;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    text-align: flex-start;
+}
+
+#main-banner h1{
+    text-align: center;
+    color: white;
+    font-size: 60px;
+    background-color: rgba(34, 34, 34, 0.76);
+    padding: 20px 40px;
+}

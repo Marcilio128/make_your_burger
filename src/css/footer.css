@@ -1,0 +1,10 @@
+#Footer{
+    height: 100px;
+    background-color: var(--nav-color);
+    border-top: 4px solid var(--bar-nav-color);
+    color: #FCBA03;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
