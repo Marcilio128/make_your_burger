@@ -1,0 +1,70 @@
+#burger-form{
+    max-width: 400px;
+    margin: 0 auto;
+
+}
+
+.input-container{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+
+}
+
+label{
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #222;
+    padding: 5px 10px;
+    border-left: 4px solid #FCDA03;
+}
+
+input, select{
+    padding: 5px 10px;
+    width: 300px;
+}
+
+#option-container{
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#option-title{
+    width: 100%;
+}
+
+.checkbox-container{
+    display: flex;
+    align-items: flex-start;
+    align-items: center;
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+.checkbox-container span,
+.checkbox-container input{
+    width: auto;
+
+}
+
+.checkbox-container span{
+    margin-left: 6px;
+    font-weight: bold;
+}
+
+.submit-btn{
+    background-color: #222;
+    color: #FCDA03;
+    border: 2px solid #222;
+    padding: 10px;
+    font-size: 16px;
+    margin: 0 auto;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.submit-btn:hover{
+    background-color: #FCDA03;
+    color: #222;
+    border: 2px solid #FCDA03;
+}

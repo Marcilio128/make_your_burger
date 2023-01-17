@@ -1,6 +1,6 @@
 {
     "Ingredientes": {
-        "pães": [
+        "paes": [
             {"id": 1, "tipo": "Italiano Branco"},
             {"id": 2, "tipo": "Carioca"},
             {"id": 3, "tipo": "Massa Fina"},
@@ -12,7 +12,7 @@
             {"id": 3, "tipo": "Carne Moida"},
             {"id": 4, "tipo": "Picanha"}
         ],
-        "Adicionais": [
+        "adicional": [
             {"id": 1, "tipo": "Bacon"},
             {"id": 2, "tipo": "Cheedar"},
             {"id": 3, "tipo": "Salame"},
@@ -20,12 +20,12 @@
             {"id": 4, "tipo": "Pepino"},
             {"id": 4, "tipo": "Tomate"}
         ],
-        "Acompanhamento": [
+        "acompanhamentos": [
             {"id": 1, "tipo": "Batata Frita"},
             {"id": 2, "tipo": "Anéis de cebola"},
             {"id": 3, "tipo": "Salada"}
         ],
-        "Bebida": [
+        "bebidas": [
             {"id": 1, "tipo": "Coca-Cola"},
             {"id": 2, "tipo": "Pepsi"},
             {"id": 3, "tipo": "Guarana"}
