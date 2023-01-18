@@ -1,0 +1,62 @@
+#burger-table{
+    margin: 0 auto;
+}
+
+#burgerhead,
+#burger-table-row,
+.burger-table-row {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+}
+
+#burgerhead{
+    font-weight: bold;
+    padding: 12px;
+    border-bottom: 3px solid #333;
+}
+
+#burgerhead div,
+.burger-table-row div{
+    width: calc(100% / 8);
+}
+
+
+#burgerhead ul,
+.burger-table-row ul{
+    width: 12%;
+}
+
+li{
+    list-style: none;
+    text-decoration: none;
+}
+
+.burger-table-row {
+    width: 100%;
+    padding: 12px;
+    border-bottom: 1px solid #ccc;
+}
+
+#burgerhead .order-id,
+.burger-table-row .order-number{
+    width: 5%;
+}
+
+.delete-btn {
+    background-color: #222;
+    color: #FCDA03;
+    font-weight: bold;
+    border: 2px solid #222;
+    padding: 5px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.delete-btn:hover{
+    background-color: #FCDA03;
+    color: #222;
+    font-weight: bold;
+    border: 2px solid #FCDA03;
+}
+

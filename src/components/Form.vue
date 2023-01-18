@@ -1,10 +1,10 @@
 <template>
     <div id="main-form">
-        <p>Componente De Mensagem</p>
+            <Message :msg="msg" v-show="msg"/>
         <form id="burger-form" @submit="createBurger">
             <div class="input-container">
                 <label for="nome">Nome Do Cliente</label>
-                <input type="text" name="nome" v-model="nome" placeholder="digite o seu nome" id="nome">
+                <input type="text" name="nome" class="name" v-model="nome" placeholder="digite o seu nome" id="nome">
             </div>
 
             <div class="input-container">
@@ -59,6 +59,7 @@
 
 <script>
 import FormCSS from '../css/Form.css'
+import Message from '../components/Message.vue'
 
     export default {
         name: "Form",
@@ -85,6 +86,7 @@ import FormCSS from '../css/Form.css'
                 const req = await fetch("http://localhost:8083/Ingredientes");
                 const data = await req.json();
 
+
                 this.paes = data.paes;
                 this.carnes = data.carnes;
                 this.adicionaldata = data.adicional;
@@ -106,7 +108,28 @@ import FormCSS from '../css/Form.css'
 
                 }
                 
-               console.log(data)
+                const dataJson = JSON.stringify(data);
+
+                const req = await fetch("http://localhost:8083/Burgers", {
+                method: "POST",
+                headers: {"Content-Type": "application/json"},
+                body: dataJson
+            });
+
+            const res = await req.json();
+            
+            this.msg = `Pedido n° ${res.id} realizado com sucesso`
+
+            setTimeout(() => this.msg = "", 5000)
+
+
+            this.nome = "";
+            this.carnes = "";
+            this.paes = "";
+            this.adicional = "";
+            this.acompanhamentos = "";
+            this.bebidas = "";
+
             }
        },
         mounted(){
@@ -114,6 +137,14 @@ import FormCSS from '../css/Form.css'
         },  
         components: {
             FormCSS,
+            Message
         }
     }
 </script>
+
+<style scoped>
+.name, .submit-btn, select{
+    padding: 5px 10px;
+    width: 300px;
+}
+</style>

@@ -19,10 +19,7 @@ label{
     border-left: 4px solid #FCDA03;
 }
 
-input, select{
-    padding: 5px 10px;
-    width: 300px;
-}
+
 
 #option-container{
     flex-direction: row;
